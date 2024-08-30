@@ -1,0 +1,8 @@
+# Requirements.txt cannot contain Korean characters. (results in cp949 error)
+# Never use Korean characters.
+
+pyinstaller
+pyinstaller-hooks-contrib
+debugpy
+dduk-application
+# uuid

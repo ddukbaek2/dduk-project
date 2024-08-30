@@ -1,0 +1,71 @@
+{
+    "[python]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"diffEditor.ignoreTrimWhitespace": false,
+		"editor.formatOnType": true,
+		"editor.wordBasedSuggestions": "off"
+	},
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+        "**/.gitkeep": true,
+        "**/LICENSE": true,
+        "**/.pypirc": true,
+
+        "**/build.bat": false,
+        "**/run.bat": false,
+        "**/service.bat": false,
+        "**/variable.bat": false,
+        "**/venv.bat": false,
+        
+        "**/variable-override.bat": false,
+        "**/venv-update-override.bat": false,
+
+        "**/__prepare__.py": false,
+        "**/__launch__.py": false
+    },
+    "python.autoComplete.extraPaths": [
+        "./hints",
+        "./src",
+        "./tests"
+    ],
+    "python.analysis.extraPaths": [
+        "./hints",
+        "./src",
+        "./tests"
+    ],
+	"python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+	"python.terminal.activateEnvironment": true,
+	"python.REPL.enableREPLSmartSend": false,
+	"python.languageServer": "Pylance",
+	"python.analysis.typeCheckingMode": "off",
+	"terminal.integrated.showExitAlert": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}/System32/cmd.exe",
+                "${env:windir}/SysWOW64/cmd.exe"
+            ]
+        }
+    },
+	"dduk": {
+		"application": {
+			"source": {
+				"symbols": ["SOURCE", "LOG"],
+			},
+			"build": {
+				"symbols": ["BUILD", "LOG"]
+			},
+			"service": {
+				"symbols": ["SERVICE", "LOG"]
+			}
+		}
+	}
+}

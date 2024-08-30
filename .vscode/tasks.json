@@ -1,0 +1,58 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        // 준비 작업.
+        {
+            "label": "PREPARE_TASK",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "${workspaceFolder}\\run.bat",
+                "prepare"
+            ],
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }       
+        },
+        // 바이너리 빌드 작업.
+        {
+            "label": "BUILD_TASK",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "${workspaceFolder}\\run.bat",
+                "build",
+                "binary"
+            ],
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		// 기본 구성.
+		{
+			"name": "Run",
+			"type": "debugpy",
+			"request": "launch",
+			"program": "${workspaceFolder}\\src\\__launch__.py",
+			"console": "integratedTerminal",
+			"justMyCode": false,
+			"cwd": "${workspaceFolder}",
+			"python": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+			"preLaunchTask": "PREPARE_TASK"
+		}
+	]
+}
