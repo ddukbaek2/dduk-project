@@ -60,7 +60,7 @@
 			"source": {
 				"symbols": ["SOURCE", "LOG"],
 			},
-			"build": {
+			"binary": {
 				"symbols": ["BUILD", "LOG"]
 			},
 			"service": {

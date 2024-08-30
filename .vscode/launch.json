@@ -1,9 +1,8 @@
 {
 	"version": "0.2.0",
 	"configurations": [
-		// 기본 구성.
 		{
-			"name": "Run",
+			"name": "Launch",
 			"type": "debugpy",
 			"request": "launch",
 			"program": "${workspaceFolder}\\src\\__launch__.py",

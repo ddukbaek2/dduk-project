@@ -1,7 +1,6 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-        // 준비 작업.
         {
             "label": "PREPARE_TASK",
             "type": "shell",
@@ -27,7 +26,6 @@
                 "clear": false
             }       
         },
-        // 바이너리 빌드 작업.
         {
             "label": "BUILD_TASK",
             "type": "shell",
