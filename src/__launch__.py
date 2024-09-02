@@ -18,6 +18,7 @@ if __name__ == "__main__":
 		exitcode = launcher.Launch()
 		# builtins.print("__LAUNCH_END__")
 		sys.exit(exitcode)
+		pass
 	except KeyboardInterrupt as exception:
 		# builtins.print("__LAUNCH_END__")
 		sys.exit(0)

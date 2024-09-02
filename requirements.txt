@@ -3,6 +3,5 @@
 
 pyinstaller
 pyinstaller-hooks-contrib
-debugpy
 dduk-application
 # uuid

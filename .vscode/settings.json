@@ -59,6 +59,7 @@
 		"application": {
 			"source": {
 				"symbols": ["SOURCE", "LOG"],
+                "arguments": []
 			},
 			"binary": {
 				"symbols": ["BUILD", "LOG"]

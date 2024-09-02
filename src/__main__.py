@@ -29,6 +29,6 @@ def Main(arguments : list[str]) -> int:
 	for symbol in symbols:
 		Application.Log(f"- {symbol}")
 
-	Application.Log("HELLO DDUK-APPLICATION-TEMPLATE")
 
+	Application.Log(f"안녕하세요!!")
 	return 0
