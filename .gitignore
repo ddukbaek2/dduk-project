@@ -21,3 +21,10 @@ logs/*
 # !tests/.gitkeep
 workingspace/*
 !workingspace/.gitkeep
+# .pypirc
+# LICENSE
+# MANIFEST.in
+# README.md
+# requirements.txt
+# *.bat
+# *.sh

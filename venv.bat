@@ -154,7 +154,7 @@ exit /b 0
 	python --version
 	python -m ensurepip --upgrade >nul 2>nul
 	python -m pip install --upgrade pip >nul 2>nul
-	python -m pip install --upgrade -r "%REQUIREMENTSFILEPATH%" >nul 2>nul
+	python -m pip install --upgrade --force -r "%REQUIREMENTSFILEPATH%" >nul 2>nul
 
 	:: C:\ProgramData\dduk-python\dduk-application\{projectName}\libs 폴더 생성.
 	if not exist "%APPLICATIONDATALIBSPATH%" ( mkdir "%APPLICATIONDATALIBSPATH%" )

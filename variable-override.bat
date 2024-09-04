@@ -15,6 +15,7 @@ if not defined IS_VARIABLE_OVERRIDE (
 set PYTHONFILEPATH=C:\Program Files\Python312\python.exe
 
 :: 빌드 이름. (오버라이드)
+:: set BUILDNAME=dduk-application
 set BUILDNAME=%ROOTNAME%
 
 :: 빌드 파일 경로. (오버라이드)
@@ -32,15 +33,3 @@ set EGGINFONAME=%BUILDNAME:-=_%.egg-info
 
 :: 빌드 파일을 만들면서 생기는 에그 인포 디렉토리 경로.
 set BUILDEGGINFOPATH=%SOURCEPATH%\%EGGINFONAME%
-
-:: BPY 라이브러리 이름.
-set BPYFILENAME=bpy-4.0.0-cp310-cp310-win_amd64.whl
-
-:: BPY 라이브러리 다운로드 경로.
-set BPYDOWNLOADFILEPATH=%APPLICATIONDATALIBSPATH%\%BPYFILENAME%
-
-:: BPY 라이브러리 적용 경로.
-set BPYFILEPATH=%LIBSPATH%\%BPYFILENAME%
-
-:: BPY 라이브러리 다운로드 주소.
-set BPYFILEURL=https://altavagroup.synology.me/conversion/download/%BPYFILENAME%
